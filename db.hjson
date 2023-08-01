@@ -1,25 +1,43 @@
 {
-  version: 0.1
+	browsers: [
+		{
+			name: firefox
+		}
+		{
+			name: orion
+		}
+		{
+			name: pulse
+			homepage: https://pulsebrowser.app
+		}
+		{
+			name: floor
+			code: https://github.com/Floorp-Projects/Floorp
+		}
+		{
+			name: chrome
+		}
+		{
+			name: chromium
+		}
+		{
+			name: safari
+		}
+		{
+			name: waterfox
+		}
+		{
+			name: brave
+		}
+		{
+			name: vivaldi
+		}
+		{
+			name: opera
+		}
+	]
+	version: 0.1
 
-  browsers: [
-  {
-    name: firefox
- }
-{
-  name: orion
-}
-{ name: pulse, homepage: https://pulsebrowser.app }
-{ name: floor, code: https://github.com/Floorp-Projects/Floorp }
-{name: chrome}
-{name: chromium}
-{name: safari}
-{name: waterfox}
-{name: brave}
-{name:vivaldi}
-{name:opera}
-
-  ]
-
-# add engine for each
-  # use lowdb with a hjson adapter to read this or hjson to json and then just read with raw lowdb
+	// add engine for each
+	// use lowdb with a hjson adapter to read this or hjson to json and then just read with raw lowdb
 }

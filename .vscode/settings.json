@@ -1,0 +1,11 @@
+{
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "hjson-formatter.options": {
+    "bracesSameLine": true,
+    "quotes": "min",
+    "space": "\t",
+    "separator": false
+  }
+}
