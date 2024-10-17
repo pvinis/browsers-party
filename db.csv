@@ -1,13 +1,15 @@
 name     ,homepage                                  ,code                                      ,engine
-firefox  ,https://www.mozilla.org/en-US/firefox/new ,                                          ,gecko
-orion    ,https://kagi.com/orion/                   ,                                          ,
-pulse    ,https://pulsebrowser.app                  ,                                          ,
-floorp   ,https://floorp.app/en                     ,https://github.com/Floorp-Projects/Floorp ,
-chrome   ,                                          ,                                          ,blink
-chromium ,                                          ,                                          ,
-safari   ,                                          ,                                          ,
-waterfox ,                                          ,                                          ,
-brave    ,                                          ,                                          ,
-vivaldi  ,                                          ,                                          ,
-opera    ,                                          ,                                          ,
-sidekick ,https://www.meetsidekick.com              ,                                          ,
+Firefox  ,https://www.mozilla.org/en-US/firefox/new ,                                          ,Gecko
+Orion    ,https://kagi.com/orion/                   ,                                          ,
+Pulse    ,https://pulsebrowser.app                  ,                                          ,
+Floorp   ,https://floorp.app/en                     ,https://github.com/Floorp-Projects/Floorp ,
+Chrome   ,                                          ,                                          ,Blink
+Chromium ,                                          ,                                          ,
+Safari   ,                                          ,                                          ,WebKit
+Waterfox ,                                          ,                                          ,
+Brave    ,                                          ,                                          ,
+Arc      ,                                          ,                                          ,
+Zen      ,                                          ,                                          ,
+Vivaldi  ,   https://vivaldi.com                                       ,                                          ,
+Opera    ,   https://www.opera.com                                       ,                                          ,
+Sidekick ,https://www.meetsidekick.com              ,                                          ,
