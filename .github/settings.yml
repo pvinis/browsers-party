@@ -1,0 +1,15 @@
+repository:
+  name: browsers
+  description: If browsers were pokemon, I'd be Ash Ketchum, trying to catch them all!
+  homepage: https://browsers.party
+  topics: browser, browsers, comparison, browser engines
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: false
+
+labels:
+  - name: new-browser
+    color: CC0000
+    description: Adding a new browser
