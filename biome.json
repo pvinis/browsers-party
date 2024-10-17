@@ -10,7 +10,7 @@
 	"organizeImports": { "enabled": true },
 	"linter": {
 		"enabled": true,
-		"rules": { "recommended": true }
+		"rules": { "recommended": true, "a11y": { "useKeyWithClickEvents": "off" } }
 	},
 	"javascript": {
 		"formatter": {
