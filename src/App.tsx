@@ -156,7 +156,7 @@ export function App() {
 
 			<div>
 				<p>
-					Made with ❤️ by <a href="https://pvinis.com">Pavlos Vinieratos</a>.
+					Made with 💜 by <a href="https://pvinis.com">Pavlos Vinieratos</a>.
 					<br />
 					Source code and contributions on{" "}
 					<a href="https://github.com/pvinis/browsers-party">GitHub</a>.
