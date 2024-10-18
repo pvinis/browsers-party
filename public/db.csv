@@ -30,3 +30,4 @@ NetSurf,https://www.netsurf-browser.org/,https://www.netsurf-browser.org/downloa
 Otter,https://otter-browser.org/,https://github.com/OtterBrowser/otter-browser,QtWebkit-ng
 Puffin,https://www.puffin.com/secure-browser,N/A,Blink
 SeaMonkey,https://www.seamonkey-project.org/,https://www.seamonkey-project.org/dev/code-development,Gecko
+Ladybird,https://ladybird.org/,https://github.com/LadybirdBrowser/ladybird,LibWeb
