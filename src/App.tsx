@@ -34,23 +34,25 @@ const columns = [
 
 export function App() {
 	const { readString } = usePapaParse()
-	const [data, setData] = useState([])
+	const [data, setData] = useState<Browser[]>([])
 
 	useEffect(() => {
 		const loadData = async () => {
 			const csvContent = await (await fetch("db.csv")).text()
 
-			readString(csvContent, {
+			readString<Browser>(csvContent, {
 				header: true,
 				skipEmptyLines: true,
 				complete: (results) => {
-					results.errors.length > 0 && console.log(results.errors)
+					if (results.errors.length > 0) {
+						console.log(results.errors)
+					}
 					setData(results.data)
 				},
 			})
 		}
 		loadData()
-	}, [])
+	}, [readString])
 
 	const [sorting, setSorting] = useState<SortingState>([])
 	const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
@@ -141,9 +143,9 @@ export function App() {
 	)
 }
 
-function Filter({ column }: { column: Column<any, unknown> }) {
+function Filter({ column }: { column: Column<Browser, unknown> }) {
 	const columnFilterValue = column.getFilterValue()
-	const { filterVariant } = column.columnDef.meta ?? {}
+	const { filterVariant } = column.columnDef.meta as { filterVariant: "range" | "select" | "text" }
 
 	return filterVariant === "range" ? (
 		<div>
@@ -208,7 +210,7 @@ function DebouncedInput({
 		}, debounce)
 
 		return () => clearTimeout(timeout)
-	}, [value])
+	}, [value, debounce, onChange])
 
 	return <input {...props} value={value} onChange={(e) => setValue(e.target.value)} />
 }
