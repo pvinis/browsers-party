@@ -8,6 +8,10 @@ browsers.party is a website that shows you all the browsers you could use, with 
 
 If you notice a browser is missing, please open an issue or a PR, providing a link to a page where the browser is available.
 
+## Where is the data?
+
+It's all in the repo here, in the [public/db.csv](./public/db.csv) file.
+
 ## Sources
 
 Initial sources:
