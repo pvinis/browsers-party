@@ -14,6 +14,11 @@ If you notice a browser is missing, please open an issue or a PR, providing a li
 
 It's all in the repo here, in the [public/db.csv](./public/db.csv) file.
 
+
+## How can I help?
+
+We are in need of prettifying the website. If you have any ideas, please open up a PR or talk to me on Twitter/X, [@pvinis](https://twitter.com/pvinis).
+
 ## Sources
 
 Initial sources:

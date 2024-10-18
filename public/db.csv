@@ -1,15 +1,32 @@
 name,homepage,code,engine
-Firefox,https://www.mozilla.org/en-US/firefox/new,,Gecko
-Orion,https://kagi.com/orion/,,
-Pulse,https://pulsebrowser.app,,
-Floorp,https://floorp.app/en,https://github.com/Floorp-Projects/Floorp,
-Chrome,,,Blink
-Chromium,,,
-Safari,,,WebKit
-Waterfox,,,
-Brave,,,
-Arc,,,
-Zen,,,
-Vivaldi,https://vivaldi.com,,
-Opera,https://www.opera.com,,
-Sidekick,https://www.meetsidekick.com,,
+Firefox,https://www.mozilla.org/en-US/firefox/new,https://searchfox.org/mozilla-central/source,Gecko
+Orion,https://kagi.com/orion,N/A,WebKit
+Pulse,https://pulsebrowser.app,https://github.com/pulse-browser/browser,Gecko
+Floorp,https://floorp.app/en,https://github.com/Floorp-Projects/Floorp,Gecko
+Chrome,https://www.google.com/chrome,N/A,Blink
+Chromium,https://www.chromium.org/Home,https://chromium.googlesource.com/chromium/src.git,Blink
+Safari,https://www.apple.com/safari,N/A,WebKit
+Waterfox,https://www.waterfox.net,https://github.com/BrowserWorks/Waterfox,Gecko
+Brave,https://brave.com,https://github.com/brave/brave-browser,Blink
+Arc,https://arc.net,N/A,Blink
+Zen,https://zen-browser.app,https://github.com/zen-browser/desktop,Gecko
+Vivaldi,https://vivaldi.com,https://vivaldi.com/source/,Blink
+Opera,https://www.opera.com,N/A,Blink
+Sidekick,https://www.meetsidekick.com,N/A,Blink
+Yandex,https://yandex.com,N/A,Blink
+Pale Moon,https://www.palemoon.org,https://www.palemoon.org/sourcecode.shtml,Goanna (Gecko)
+Edge,https://www.microsoft.com/en-us/edge/download,N/A,Blink
+Midori,https://astian.org/midori-browser,https://github.com/midori-browser/core,WebKit
+GNOME Web (Epiphany),https://wiki.gnome.org/Apps/Web,https://gitlab.gnome.org/GNOME/epiphany,WebKit
+IceCat,https://icecatbrowser.org,https://github.com/tmiland/GNU-IceCat,Gecko
+Tor,https://www.torproject.org,https://gitlab.torproject.org/tpo/applications/tor-browser,Gecko
+Browsh,https://www.brow.sh,https://github.com/browsh-org/browsh,Custom
+Basilisk,https://www.basilisk-browser.org,https://repo.palemoon.org/Basilisk-Dev/Basilisk,Gecko
+Avant,http://www.avantbrowser.com,N/A,"Trident, Gecko, Webkit"
+Falkon,https://www.falkon.org,https://invent.kde.org/network/falkon,QtWebEngine
+Konqueror,https://apps.kde.org/konqueror,https://github.com/KDE/konqueror,KDEWebKit
+Maxthon,https://www.maxthon.com/,N/A,Blink
+NetSurf,https://www.netsurf-browser.org/,https://www.netsurf-browser.org/downloads/source/,Custom
+Otter,https://otter-browser.org/,https://github.com/OtterBrowser/otter-browser,QtWebkit-ng
+Puffin,https://www.puffin.com/secure-browser,N/A,Blink
+SeaMonkey,https://www.seamonkey-project.org/,https://www.seamonkey-project.org/dev/code-development,Gecko
