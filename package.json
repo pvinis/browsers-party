@@ -15,7 +15,8 @@
     "@fontsource/iosevka": "^5.1.0",
     "@tanstack/react-table": "^8.20.5",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-papaparse": "^4.4.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",

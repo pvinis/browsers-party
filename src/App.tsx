@@ -1,14 +1,15 @@
 import {
-	Column,
-	ColumnFiltersState,
+	type Column,
+	type ColumnFiltersState,
+	type SortingState,
 	createColumnHelper,
 	flexRender,
 	getCoreRowModel,
 	getFilteredRowModel,
 	getSortedRowModel,
-	SortingState,
 	useReactTable,
 } from "@tanstack/react-table"
+import { usePapaParse } from "react-papaparse"
 import { useEffect, useState } from "react"
 
 type Browser = {
@@ -17,19 +18,6 @@ type Browser = {
 	code?: string
 	engine?: string
 }
-
-const defaultData: Browser[] = [
-	{
-		name: "Chrome",
-		homepage: "https://www.google.com/chrome",
-		code: "Chrome",
-	},
-	{
-		name: "Firefox",
-		homepage: "https://www.mozilla.org/firefox",
-		engine: "Gecko",
-	},
-]
 
 const columnHelper = createColumnHelper<Browser>()
 
@@ -45,7 +33,25 @@ const columns = [
 ]
 
 export function App() {
-	const data = defaultData
+	const { readString } = usePapaParse()
+	const [data, setData] = useState([])
+
+	useEffect(() => {
+		const loadData = async () => {
+			const csvContent = await (await fetch("db.csv")).text()
+
+			readString(csvContent, {
+				header: true,
+				skipEmptyLines: true,
+				complete: (results) => {
+					results.errors.length > 0 && console.log(results.errors)
+					setData(results.data)
+				},
+			})
+		}
+		loadData()
+	}, [])
+
 	const [sorting, setSorting] = useState<SortingState>([])
 	const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
 
