@@ -22,6 +22,7 @@ Iridium,https://iridiumbrowser.de,https://iridiumbrowser.de/downloads/source,Bli
 K-Meleon,http://kmeleonbrowser.org,http://kmeleonbrowser.org/wiki/DownloadsArchive,"Gecko, Goanna",dormant
 Konqueror,https://apps.kde.org/konqueror,https://github.com/KDE/konqueror,KDEWebKit,
 Ladybird,https://ladybird.org,https://github.com/LadybirdBrowser/ladybird,LibWeb,under development
+Librewolf,https://librewolf.net,https://codeberg.org/librewolf,Gecko,active
 luakit,https://luakit.github.io,https://github.com/luakit/luakit,WebKit,active
 Maxthon,https://www.maxthon.com,N/A,Blink,
 Midori,https://astian.org/midori-browser,https://github.com/midori-browser/core,WebKit,
