@@ -26,9 +26,7 @@ type Browser = {
 const columnHelper = createColumnHelper<Browser>()
 
 const columns = [
-	columnHelper.accessor("name", {
-		// cell: (info) => info.getValue(),
-	}),
+	columnHelper.accessor("name", {}),
 	columnHelper.accessor("homepage", {
 		cell: (info) => {
 			if (info.getValue()?.startsWith("http")) {
@@ -149,7 +147,9 @@ export function App() {
 														: undefined
 												}
 											>
-												{flexRender(header.column.columnDef.header, header.getContext())}
+												<span className="underline">
+													{flexRender(header.column.columnDef.header, header.getContext())}
+												</span>
 												{{
 													asc: " 🔼",
 													desc: " 🔽",
@@ -199,7 +199,10 @@ export function App() {
 					Made with 💜 by <a href="https://pvinis.com">Pavlos Vinieratos</a>.
 					<br />
 					Source code and contributions on{" "}
-					<a href="https://github.com/pvinis/browsers-party">GitHub</a>.
+					<a href="https://github.com/pvinis/browsers-party" className="underline">
+						GitHub
+					</a>
+					.
 				</p>
 			</div>
 		</div>
