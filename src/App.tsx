@@ -88,7 +88,11 @@ export function App() {
 
 	return (
 		<div className="p-2">
-			<table className="border-separate">
+			<h1 className="font-bold text-2xl">Browsers Party</h1>
+			<p>The ultimate list of desktop browsers.</p>
+
+			<p>You can sort by clicking on the column headers.</p>
+			<table className="border-separate ">
 				<thead>
 					{table.getHeaderGroups().map((headerGroup) => (
 						<tr key={headerGroup.id}>
@@ -180,14 +184,14 @@ function Filter({ column }: { column: Column<Browser, unknown> }) {
 					value={(columnFilterValue as [number, number])?.[0] ?? ""}
 					onChange={(value) => column.setFilterValue((old: [number, number]) => [value, old?.[1]])}
 					placeholder="Min"
-					className="w-24 border shadow rounded"
+					className="w-24 rounded border shadow"
 				/>
 				<DebouncedInput
 					type="number"
 					value={(columnFilterValue as [number, number])?.[1] ?? ""}
 					onChange={(value) => column.setFilterValue((old: [number, number]) => [old?.[0], value])}
 					placeholder="Max"
-					className="w-24 border shadow rounded"
+					className="w-24 rounded border shadow"
 				/>
 			</div>
 			<div className="h-1" />
@@ -204,7 +208,7 @@ function Filter({ column }: { column: Column<Browser, unknown> }) {
 		</select>
 	) : (
 		<DebouncedInput
-			className="w-36 border shadow rounded"
+			className="w-36 rounded border shadow"
 			onChange={(value) => column.setFilterValue(value)}
 			placeholder="Search..."
 			type="text"
