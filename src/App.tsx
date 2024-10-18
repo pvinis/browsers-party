@@ -38,7 +38,7 @@ export function App() {
 
 	useEffect(() => {
 		const loadData = async () => {
-			const csvContent = await (await fetch("db.csv")).text()
+			const csvContent = await (await fetch("/db.csv")).text()
 
 			readString<Browser>(csvContent, {
 				header: true,
@@ -145,7 +145,9 @@ export function App() {
 
 function Filter({ column }: { column: Column<Browser, unknown> }) {
 	const columnFilterValue = column.getFilterValue()
-	const { filterVariant } = column.columnDef.meta as { filterVariant: "range" | "select" | "text" }
+	const { filterVariant } = (column.columnDef.meta ?? {}) as {
+		filterVariant: "range" | "select" | "text"
+	}
 
 	return filterVariant === "range" ? (
 		<div>
