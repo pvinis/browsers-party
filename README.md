@@ -1,5 +1,7 @@
 # browsers.party
 
+<img src="public/image.webp" alt="Browsers Party Logo" width="200" height="200">
+
 ## What is this?
 
 browsers.party is a website that shows you all the browsers you could use, with info about each of them.
