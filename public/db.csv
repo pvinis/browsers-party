@@ -1,54 +1,52 @@
 name,homepage,code,engine,status
-Firefox,https://www.mozilla.org/en-US/firefox/new,https://searchfox.org/mozilla-central/source,Gecko,active
-Orion,https://kagi.com/orion,N/A,WebKit,under development
-Pulse,https://pulsebrowser.app,https://github.com/pulse-browser/browser,Gecko,
-Floorp,https://floorp.app/en,https://github.com/Floorp-Projects/Floorp,Gecko,
+Arc,https://arc.net,N/A,Blink,
+Avant,http://www.avantbrowser.com,N/A,"Trident, Gecko, Webkit",
+Basilisk,https://www.basilisk-browser.org,https://repo.palemoon.org/Basilisk-Dev/Basilisk,Gecko,
+Brave,https://brave.com,https://github.com/brave/brave-browser,Blink,
+Browsh,https://www.brow.sh,https://github.com/browsh-org/browsh,Custom,
 Chrome,https://www.google.com/chrome,N/A,Blink,
 Chromium,https://www.chromium.org/Home,https://chromium.googlesource.com/chromium/src.git,Blink,
-Safari,https://www.apple.com/safari,N/A,WebKit,
-Waterfox,https://www.waterfox.net,https://github.com/BrowserWorks/Waterfox,Gecko,
-Brave,https://brave.com,https://github.com/brave/brave-browser,Blink,
-Arc,https://arc.net,N/A,Blink,
-Zen,https://zen-browser.app,https://github.com/zen-browser/desktop,Gecko,under development
-Vivaldi,https://vivaldi.com,https://vivaldi.com/source,Blink,active
-Opera,https://www.opera.com,N/A,Blink,active
-Sidekick,https://www.meetsidekick.com,N/A,Blink,
-Yandex,https://yandex.com,N/A,Blink,
-Pale Moon,https://www.palemoon.org,https://www.palemoon.org/sourcecode.shtml,Goanna,
+Dillo,https://dillo-browser.github.io,https://github.com/dillo-browser/dillo,Custom,active
+Dooble,https://textbrowser.github.io/dooble,https://github.com/textbrowser/dooble,QtWebEngine,active
+DuckDuckGo,https://duckduckgo.com,N/A,Blink,active
+Ecosia,https://www.ecosia.org,N/A,Blink,active
 Edge,https://www.microsoft.com/en-us/edge/download,N/A,Blink,
-Midori,https://astian.org/midori-browser,https://github.com/midori-browser/core,WebKit,
+Falkon,https://www.falkon.org,https://invent.kde.org/network/falkon,QtWebEngine,
+Ferdium,https://ferdium.org,https://github.com/ferdium/ferdium-app,,
+Firefox,https://www.mozilla.org/en-US/firefox/new,https://searchfox.org/mozilla-central/source,Gecko,active
+Floorp,https://floorp.app/en,https://github.com/Floorp-Projects/Floorp,Gecko,
 GNOME Web (Epiphany),https://wiki.gnome.org/Apps/Web,https://gitlab.gnome.org/GNOME/epiphany,WebKit,
 IceCat,https://icecatbrowser.org,https://github.com/tmiland/GNU-IceCat,Gecko,
-Tor,https://www.torproject.org,https://gitlab.torproject.org/tpo/applications/tor-browser,Gecko,active
-Browsh,https://www.brow.sh,https://github.com/browsh-org/browsh,Custom,
-Basilisk,https://www.basilisk-browser.org,https://repo.palemoon.org/Basilisk-Dev/Basilisk,Gecko,
-Avant,http://www.avantbrowser.com,N/A,"Trident, Gecko, Webkit",
-Falkon,https://www.falkon.org,https://invent.kde.org/network/falkon,QtWebEngine,
-Konqueror,https://apps.kde.org/konqueror,https://github.com/KDE/konqueror,KDEWebKit,
-Maxthon,https://www.maxthon.com,N/A,Blink,
-NetSurf,https://www.netsurf-browser.org,https://www.netsurf-browser.org/downloads/source,Custom,
-Otter,https://otter-browser.org,https://github.com/OtterBrowser/otter-browser,QtWebkit-ng,
-Puffin,https://www.puffin.com/secure-browser,N/A,Blink,
-SeaMonkey,https://www.seamonkey-project.org,https://www.seamonkey-project.org/dev/code-development,Gecko,
-Ladybird,https://ladybird.org,https://github.com/LadybirdBrowser/ladybird,LibWeb,under development
-Sleipnir,https://www.fenrir-inc.com/jp/sleipnir,N/A,WebKit,active
 Internet Explorer,https://www.microsoft.com/en-us/download/internet-explorer,N/A,Trident,dead
-K-Meleon,http://kmeleonbrowser.org,http://kmeleonbrowser.org/wiki/DownloadsArchive,"Gecko, Goanna",dormant
-SlimBrowser,https://www.slimbrowser.net,N/A,Gecko,active
-Ecosia,https://www.ecosia.org,N/A,Blink,active
-DuckDuckGo,https://duckduckgo.com,N/A,Blink,active
-Thorium,https://thorium.rocks,https://github.com/Alex313031/Thorium,Blink,active
-SRWare Iron,https://www.srware.net/iron,N/A,Blink,active
-Ulaa,https://ulaa.com,N/A,Blink,active
-Ferdium,https://ferdium.org,https://github.com/ferdium/ferdium-app,,
-Rambox,https://rambox.app,,,
-Station,https://getstation.com,,,
-Wavebox,https://wavebox.io,,,
-qutebrowser,https://qutebrowser.org,https://github.com/qutebrowser/qutebrowser,QtWebEngine,active
-luakit,https://luakit.github.io,https://github.com/luakit/luakit,WebKit,active
 Iridium,https://iridiumbrowser.de,https://iridiumbrowser.de/downloads/source,Blink,active
+K-Meleon,http://kmeleonbrowser.org,http://kmeleonbrowser.org/wiki/DownloadsArchive,"Gecko, Goanna",dormant
+Konqueror,https://apps.kde.org/konqueror,https://github.com/KDE/konqueror,KDEWebKit,
+Ladybird,https://ladybird.org,https://github.com/LadybirdBrowser/ladybird,LibWeb,under development
+luakit,https://luakit.github.io,https://github.com/luakit/luakit,WebKit,active
+Maxthon,https://www.maxthon.com,N/A,Blink,
+Midori,https://astian.org/midori-browser,https://github.com/midori-browser/core,WebKit,
+NetSurf,https://www.netsurf-browser.org,https://www.netsurf-browser.org/downloads/source,Custom,
+Opera,https://www.opera.com,N/A,Blink,active
+Orion,https://kagi.com/orion,N/A,WebKit,under development
+Otter,https://otter-browser.org,https://github.com/OtterBrowser/otter-browser,QtWebkit-ng,
+Pale Moon,https://www.palemoon.org,https://www.palemoon.org/sourcecode.shtml,Goanna,
+Puffin,https://www.puffin.com/secure-browser,N/A,Blink,
+Pulse,https://pulsebrowser.app,https://github.com/pulse-browser/browser,Gecko,
+qutebrowser,https://qutebrowser.org,https://github.com/qutebrowser/qutebrowser,QtWebEngine,active
+Rambox,https://rambox.app,,,
+Safari,https://www.apple.com/safari,N/A,WebKit,
+SeaMonkey,https://www.seamonkey-project.org,https://www.seamonkey-project.org/dev/code-development,Gecko,
+Sidekick,https://www.meetsidekick.com,N/A,Blink,
+Sleipnir,https://www.fenrir-inc.com/jp/sleipnir,N/A,WebKit,active
+SlimBrowser,https://www.slimbrowser.net,N/A,Gecko,active
+SRWare Iron,https://www.srware.net/iron,N/A,Blink,active
+Station,https://getstation.com,,,
 surf,https://surf.suckless.org,https://git.suckless.org/surf,https://surf.suckless.org,active
-Dooble,https://textbrowser.github.io/dooble,https://github.com/textbrowser/dooble,QtWebEngine,active
-Dillo,https://dillo-browser.github.io,https://github.com/dillo-browser/dillo,Custom,active
-,,,,
-,,,,
+Thorium,https://thorium.rocks,https://github.com/Alex313031/Thorium,Blink,active
+Tor,https://www.torproject.org,https://gitlab.torproject.org/tpo/applications/tor-browser,Gecko,active
+Ulaa,https://ulaa.com,N/A,Blink,active
+Vivaldi,https://vivaldi.com,https://vivaldi.com/source,Blink,active
+Waterfox,https://www.waterfox.net,https://github.com/BrowserWorks/Waterfox,Gecko,
+Wavebox,https://wavebox.io,,,
+Yandex,https://yandex.com,N/A,Blink,
+Zen,https://zen-browser.app,https://github.com/zen-browser/desktop,Gecko,under development
