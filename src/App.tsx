@@ -25,9 +25,21 @@ const columns = [
 	columnHelper.accessor("name", {
 		// cell: (info) => info.getValue(),
 	}),
-	columnHelper.accessor("homepage", {}),
+	columnHelper.accessor("homepage", {
+		cell: (info) => {
+			if (info.getValue()?.startsWith("http")) {
+				return <a href={info.getValue()}>{info.getValue()}</a>
+			}
+			return info.getValue()
+		},
+	}),
 	columnHelper.accessor("code", {
-		// cell: (info) => info.renderValue(),
+		cell: (info) => {
+			if (info.getValue()?.startsWith("http")) {
+				return <a href={info.getValue()}>{info.getValue()}</a>
+			}
+			return info.getValue()
+		},
 	}),
 	columnHelper.accessor("engine", {}),
 ]
@@ -76,7 +88,7 @@ export function App() {
 
 	return (
 		<div className="p-2">
-			<table>
+			<table className="border-separate">
 				<thead>
 					{table.getHeaderGroups().map((headerGroup) => (
 						<tr key={headerGroup.id}>
@@ -117,9 +129,11 @@ export function App() {
 				</thead>
 				<tbody>
 					{table.getRowModel().rows.map((row) => (
-						<tr key={row.id} className="even:bg-slate-100">
+						<tr key={row.id} className="even:bg-slate-100 ">
 							{row.getVisibleCells().map((cell) => (
-								<td key={cell.id}>{flexRender(cell.column.columnDef.cell, cell.getContext())}</td>
+								<td key={cell.id} className="px-2">
+									{flexRender(cell.column.columnDef.cell, cell.getContext())}
+								</td>
 							))}
 						</tr>
 					))}
