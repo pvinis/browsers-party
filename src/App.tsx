@@ -11,12 +11,16 @@ import {
 } from "@tanstack/react-table"
 import { useEffect, useState } from "react"
 import { usePapaParse } from "react-papaparse"
+import { cn } from "./utils"
+
+type Status = "active" | "under development" | "dormant" | "dead"
 
 type Browser = {
 	name: string
 	homepage?: string
 	code?: string
 	engine?: string
+	status?: Status
 }
 
 const columnHelper = createColumnHelper<Browser>()
@@ -42,6 +46,36 @@ const columns = [
 		},
 	}),
 	columnHelper.accessor("engine", {}),
+	columnHelper.accessor("status", {
+		cell: (info) => {
+			const colorMap: Record<Status, string> = {
+				active: "bg-green-200",
+				"under development": "bg-yellow-200",
+				dormant: "bg-gray-200",
+				dead: "bg-red-200",
+			}
+			const status = info.getValue()
+			const color = status ? colorMap[status as Status] : ""
+			return (
+				<div className={cn(color)}>
+					<span>{status}</span>
+				</div>
+			)
+		},
+		sortingFn: (rowA, rowB, columnId) => {
+			const statusA = rowA.getValue(columnId) as Status | undefined
+			const statusB = rowB.getValue(columnId) as Status | undefined
+
+			const statusOrder: Record<Status, number> = {
+				active: 1,
+				"under development": 2,
+				dormant: 3,
+				dead: 4,
+				// undefined: 5
+			}
+			return (statusA ? statusOrder[statusA] : 5) - (statusB ? statusOrder[statusB] : 5)
+		},
+	}),
 ]
 
 export function App() {
