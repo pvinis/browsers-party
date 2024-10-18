@@ -1,4 +1,4 @@
-import { AppleLogo, Cube, Heart, LinuxLogo, WindowsLogo } from "@phosphor-icons/react"
+import { AppleLogo, LinuxLogo, WindowsLogo } from "@phosphor-icons/react"
 import {
 	type Column,
 	type ColumnFiltersState,
