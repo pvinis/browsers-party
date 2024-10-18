@@ -1,3 +1,4 @@
+import { AppleLogo, Cube, Heart, LinuxLogo, WindowsLogo } from "@phosphor-icons/react"
 import {
 	type Column,
 	type ColumnFiltersState,
@@ -21,6 +22,7 @@ type Browser = {
 	code?: string
 	engine?: string
 	status?: Status
+	os?: string
 }
 
 const columnHelper = createColumnHelper<Browser>()
@@ -72,6 +74,21 @@ const columns = [
 				// undefined: 5
 			}
 			return (statusA ? statusOrder[statusA] : 5) - (statusB ? statusOrder[statusB] : 5)
+		},
+	}),
+	columnHelper.accessor("os", {
+		cell: (info) => {
+			const oses = []
+			if (info.getValue()?.includes("macos")) {
+				oses.push(<AppleLogo size={24} />)
+			}
+			if (info.getValue()?.includes("windows")) {
+				oses.push(<WindowsLogo size={24} />)
+			}
+			if (info.getValue()?.includes("linux")) {
+				oses.push(<LinuxLogo size={24} />)
+			}
+			return <div className="flex">{oses}</div>
 		},
 	}),
 ]
