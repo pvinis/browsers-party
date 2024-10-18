@@ -9,8 +9,8 @@ import {
 	getSortedRowModel,
 	useReactTable,
 } from "@tanstack/react-table"
-import { usePapaParse } from "react-papaparse"
 import { useEffect, useState } from "react"
+import { usePapaParse } from "react-papaparse"
 
 type Browser = {
 	name: string
