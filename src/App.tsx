@@ -66,7 +66,7 @@ export function App() {
 		loadData()
 	}, [readString])
 
-	const [sorting, setSorting] = useState<SortingState>([])
+	const [sorting, setSorting] = useState<SortingState>([{ id: "name", desc: false }])
 	const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([])
 
 	const table = useReactTable({
@@ -88,7 +88,9 @@ export function App() {
 
 	return (
 		<div className="p-2">
-			<h1 className="font-bold text-2xl">Browsers Party</h1>
+			<h1 className="font-bold text-2xl">
+				Browsers Party <div className="inline-block animate-bounce">🎉</div>
+			</h1>
 			<p>The ultimate list of desktop browsers.</p>
 
 			<p>You can sort by clicking on the column headers.</p>
