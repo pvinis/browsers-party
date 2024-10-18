@@ -16,11 +16,11 @@
     "@phosphor-icons/react": "^2.1.7",
     "@tanstack/react-table": "^8.20.5",
     "clsx": "^2.1.1",
+    "posthog-js": "^1.174.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-papaparse": "^4.4.0",
-    "tailwind-merge": "^2.5.4",
-    "vite-plugin-posthog": "^2.1.0"
+    "tailwind-merge": "^2.5.4"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
