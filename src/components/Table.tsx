@@ -12,13 +12,17 @@ import {
 import { Fragment, useState } from "react"
 import type { Browser, Status } from "~/types"
 import { cn } from "~/utils"
+import { capitalize } from "lodash"
 import { Filter } from "./Filter"
 
 const columnHelper = createColumnHelper<Browser>()
 
 const columns = [
-	columnHelper.accessor("name", {}),
+	columnHelper.accessor("name", {
+		header: (info) => capitalize(info.column.id),
+	}),
 	columnHelper.accessor("homepage", {
+		header: (info) => capitalize(info.column.id),
 		cell: (info) => {
 			if (info.getValue()?.startsWith("http")) {
 				return <a href={info.getValue()}>{info.getValue()}</a>
@@ -27,6 +31,7 @@ const columns = [
 		},
 	}),
 	columnHelper.accessor("code", {
+		header: "Source code",
 		cell: (info) => {
 			if (info.getValue()?.startsWith("http")) {
 				return <a href={info.getValue()}>{info.getValue()}</a>
@@ -34,8 +39,11 @@ const columns = [
 			return info.getValue()
 		},
 	}),
-	columnHelper.accessor("engine", {}),
+	columnHelper.accessor("engine", {
+		header: (info) => capitalize(info.column.id),
+	}),
 	columnHelper.accessor("status", {
+		header: (info) => capitalize(info.column.id),
 		cell: (info) => {
 			const colorMap: Record<Status, string> = {
 				active: "bg-green-200",
@@ -66,6 +74,7 @@ const columns = [
 		},
 	}),
 	columnHelper.accessor("os", {
+		header: "OS",
 		cell: (info) => {
 			const oses = []
 			if (info.getValue()?.includes("macos")) {
