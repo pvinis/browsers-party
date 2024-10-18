@@ -1,5 +1,5 @@
 import type { Column } from "@tanstack/react-table"
-import type { Browser } from "../types"
+import type { Browser } from "~/types"
 import { DebouncedInput } from "./DebouncedInput"
 
 export function Filter({ column }: { column: Column<Browser, unknown> }) {

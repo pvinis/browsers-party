@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { usePapaParse } from "react-papaparse"
-import { Table } from "./components/Table"
-import type { Browser } from "./types"
+import { Table } from "~/components/Table"
+import type { Browser } from "~/types"
 
 export function App() {
 	const { readString } = usePapaParse()

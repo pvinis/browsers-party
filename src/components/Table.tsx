@@ -10,8 +10,8 @@ import {
 	useReactTable,
 } from "@tanstack/react-table"
 import { Fragment, useState } from "react"
-import { cn } from "../utils"
-import type { Browser, Status } from "../types"
+import type { Browser, Status } from "~/types"
+import { cn } from "~/utils"
 import { Filter } from "./Filter"
 
 const columnHelper = createColumnHelper<Browser>()
