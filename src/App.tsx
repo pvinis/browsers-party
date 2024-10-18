@@ -139,6 +139,15 @@ export function App() {
 				</tfoot>
 			</table>
 			<div className="h-4" />
+
+			<div>
+				<p>
+					Made with ❤️ by <a href="https://pvinis.com">Pavlos Vinieratos</a>.
+					<br />
+					Source code and contributions on{" "}
+					<a href="https://github.com/pvinis/browsers-party">GitHub</a>.
+				</p>
+			</div>
 		</div>
 	)
 }
