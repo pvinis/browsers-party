@@ -14,7 +14,7 @@ Edge,https://www.microsoft.com/en-us/edge/download,N/A,Blink,,
 Falkon,https://www.falkon.org,https://invent.kde.org/network/falkon,QtWebEngine,,
 Ferdium,https://ferdium.org,https://github.com/ferdium/ferdium-app,,,
 Firefox,https://www.mozilla.org/en-US/firefox/new,https://searchfox.org/mozilla-central/source,Gecko,active,"macos, windows, linux"
-Floorp,https://floorp.app/en,https://github.com/Floorp-Projects/Floorp,Gecko,,
+Floorp,https://floorp.app/en,https://github.com/Floorp-Projects/Floorp,Gecko,active,
 GNOME Web (Epiphany),https://wiki.gnome.org/Apps/Web,https://gitlab.gnome.org/GNOME/epiphany,WebKit,,
 IceCat,https://icecatbrowser.org,https://github.com/tmiland/GNU-IceCat,Gecko,,
 Internet Explorer,https://www.microsoft.com/en-us/download/internet-explorer,N/A,Trident,dead,
