@@ -26,3 +26,5 @@ Initial sources:
 - https://github.com/alrra/browser-logos/blob/main/src/README.md
 - https://en.wikipedia.org/wiki/List_of_web_browsers
 - my own research
+
+[![Tip in Crypto](https://tip.md/badge.svg)](https://tip.md/pvinis)
